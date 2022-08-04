@@ -39,13 +39,14 @@ const RecipeSingle = () => {
   }
   let count = 0
   for (let i = 0; i < entries.length; i++) {
-    if (entries[i][0].includes('strMeasure') && entries[i][1]) {
+    if (entries[i][0].includes('strMeasure') && entries[i][1] && ingredients[count]) {
       measurements.push(` ${entries[i][1]}`.concat(` ${ingredients[count]} `))
+      console.log(ingredients[count])
       count++
     }
   }
   console.log('ingredients->', ingredients)
-  console.log('measurements->', measurements.join(''))
+  console.log('measurements->', measurements)
   const fullIngredients = measurements.join('')
   
 
@@ -63,10 +64,11 @@ const RecipeSingle = () => {
               <img className='w-100' src={recipes.strMealThumb} alt='Big Mac' />
               <div>
                 {measurements.map(item => {
-                  
                   return (<h2 key={item}> {item} </h2>)
-                })}
+                })
+                }
               </div>
+              <div>{recipes.strInstructions}</div>
             </Col>
           </>
           :
