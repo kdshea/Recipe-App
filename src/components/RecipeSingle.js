@@ -28,48 +28,47 @@ const RecipeSingle = () => {
   }, [])
 
 
-  console.log('entries',Object.entries(recipes))
+  console.log('entries', Object.entries(recipes))
   const entries = Object.entries(recipes)
   const ingredients = []
   const measurements = []
-  for (let i = 0; i < entries.length; i++ ) {
+  for (let i = 0; i < entries.length; i++) {
     if (entries[i][0].includes('strIngredient') && entries[i][1]) {
       ingredients.push(entries[i][1])
     }
   }
   let count = 0
-  for (let i = 0; i < entries.length; i++ ) {
+  for (let i = 0; i < entries.length; i++) {
     if (entries[i][0].includes('strMeasure') && entries[i][1]) {
-      measurements.push(entries[i][1].concat(` ${ingredients[count]} <br>`))
-      count ++
+      measurements.push(` ${entries[i][1]}`.concat(` ${ingredients[count]} `))
+      count++
     }
   }
   console.log('ingredients->', ingredients)
-  console.log('measurements->', measurements)
+  console.log('measurements->', measurements.join(''))
+  const fullIngredients = measurements.join('')
   
-  console.log('recipes.json', recipes)
+
+  console.log('entries->', entries)
+  console.log('recipes->', recipes)
 
   return (
     <Container>
       <Row>
         {entries.length > 0
           ?
-          recipes.map(recipe => {
-            const { strMeal, strMealThumb, idMeal } = recipe
-            return (
-              <>
-                <h1>{strMeal}</h1>
-                <Col key={idMeal} md="6">
-                  <img className='w-100' src={strMealThumb} alt='Big Mac' />
-                  <div>
-                    {measurements.forEach(item => {
-                      return (item)
-                    })}
-                  </div>
-                </Col>
-              </>
-            )
-          })
+          <>
+            <h1>{recipes.strMeal}</h1>
+            <Col key={idMeal} md="6">
+              <img className='w-100' src={recipes.strMealThumb} alt='Big Mac' />
+              <div>
+                {measurements.map(item => {
+                  
+                  return (<h2 key={item}> {item} </h2>)
+                })}
+              </div>
+            </Col>
+          </>
           :
           <>
             {errors ? <h2>Something went wrong. Please try again later</h2> : <h2> loading </h2>}
