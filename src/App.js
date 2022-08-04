@@ -7,6 +7,7 @@ import CategoryIndex from './components/CategoryIndex'
 import NotFound from './components/NotFound'
 import RandomPage from './components/RandomPage'
 import RecipeSingle from './components/RecipeSingle'
+import CategorySingle from './components/CategorySingle'
 
 const App = () => {
 
@@ -17,7 +18,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<CategoryIndex />} />
           <Route path="/RandomPage" element={<RandomPage />} />
-          <Route path="/RecipeSingle" element={<RecipeSingle />} />
+          <Route path="/:strCategory/:idMeal" element={<RecipeSingle />} />
+          <Route path="/:strCategory" element={<CategorySingle />} />
           <Route path="/" element={<CategoryIndex />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
