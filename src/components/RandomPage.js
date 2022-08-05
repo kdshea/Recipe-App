@@ -30,7 +30,7 @@ const RandomPage = () => {
 
   useEffect(() => {
     if (strCategory && idMeal) {
-      navigate(`/${strCategory}/${idMeal}`)
+      navigate(`/a/${strCategory}/${idMeal}`)
     }
   },[strCategory, idMeal])
  
