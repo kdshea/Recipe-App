@@ -30,19 +30,19 @@ const CategorySingle = () => {
 
 
   return (
-    <Container>
-      <h1>Recipes</h1>
+    <Container as="main" className='CategorySingle text-center'>
+      <h1 className='text-center mb-4'>Recipes</h1>
       <Row>
         {recipes.length > 0
           ?
           recipes.map(recipe => {
             const { strMeal, strMealThumb, idMeal } = recipe
             return (
-              <Col key={idMeal}>
+              <Col key={idMeal} md="4" lg="2" className='mb-4'>
                 <Link to={`/${strCategory}/${idMeal}`}>
                   <Card>
                     <Card.Img variant='top' src={strMealThumb}></Card.Img>
-                    <Card.Body className='bg-light' >
+                    <Card.Body>
                       <Card.Title className='text-center mb-0'> {strMeal} </Card.Title>
                     </Card.Body>
                   </Card>

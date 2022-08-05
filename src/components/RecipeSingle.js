@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 
 const RecipeSingle = () => {
 
@@ -54,20 +55,26 @@ const RecipeSingle = () => {
   console.log('recipes->', recipes)
 
   return (
-    <Container>
+    <Container as="main">
       <Row>
         {entries.length > 0
           ?
           <>
             <h1>{recipes.strMeal}</h1>
-            <Col key={idMeal} md="6">
-              <img className='w-100' src={recipes.strMealThumb} alt='Big Mac' />
-              <div>
-                {measurements.map(item => {
-                  return (<h2 key={item}> {item} </h2>)
-                })
-                }
-              </div>
+            <Row>
+              <Col key={idMeal} md="3">
+                <img className='w-100' src={recipes.strMealThumb} alt='Big Mac' />
+              </Col>
+              <Col>
+                <ul className='h-25'>
+                  {measurements.map(item => {
+                    return (<div className={item} key={item}> {item} </div>)
+                  })
+                  }
+                </ul>
+              </Col>
+            </Row>
+            <Col>
               <div>{recipes.strInstructions}</div>
             </Col>
           </>

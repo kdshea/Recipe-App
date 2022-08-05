@@ -26,7 +26,7 @@ const CategoryIndex = () => {
 
 
   return (
-    <Container>
+    <Container as="main" className='CategoryIndex text-center'>
       <h1>Categories</h1>
       <Row>
         {categories.length > 0
@@ -35,12 +35,12 @@ const CategoryIndex = () => {
             const { idCategory, strCategory, strCategoryThumb } = category
             console.log('strCategory', strCategory)
             return (
-              <Col key={idCategory}>
+              <Col key={idCategory}  md="2" className='mb-4'>
                 <Link to={`/${strCategory}`}>
                   <Card>
                     <Card.Img variant='top' src={strCategoryThumb}></Card.Img>
-                    <Card.Body className='bg-light' >
-                      <Card.Title className='text-center mb-0'> {strCategory} </Card.Title>
+                    <Card.Body>
+                      <Card.Title className='text-center mb-0 btn'> {strCategory} </Card.Title>
                     </Card.Body>
                   </Card>
                 </Link>
