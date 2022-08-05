@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Pan from './Pan'
 
 
 const CategorySingle = () => {
@@ -38,12 +39,12 @@ const CategorySingle = () => {
           recipes.map(recipe => {
             const { strMeal, strMealThumb, idMeal } = recipe
             return (
-              <Col key={idMeal} md="4" lg="2" className='mb-4'>
+              <Col key={idMeal} md="4" lg="3" className='mb-4'>
                 <Link to={`/${strCategory}/${idMeal}`}>
                   <Card>
                     <Card.Img variant='top' src={strMealThumb}></Card.Img>
                     <Card.Body>
-                      <Card.Title className='text-center mb-0'> {strMeal} </Card.Title>
+                      <Card.Title className='text-center mb-0 btn'> {strMeal} </Card.Title>
                     </Card.Body>
                   </Card>
                 </Link>
@@ -52,7 +53,7 @@ const CategorySingle = () => {
           })
           :
           <>
-            {errors ? <h2>Something went wrong. Please try again later</h2> : <h2> loading </h2>}
+            {errors ? <h2>Something went wrong. Please try again later</h2> : <Pan />}
           </>
         }
       </Row>

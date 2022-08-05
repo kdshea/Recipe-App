@@ -20,8 +20,8 @@ const App = () => {
           <Route path="/RandomPage" element={<RandomPage />} />
           <Route path="/:strCategory/:idMeal" element={<RecipeSingle />} />
           <Route path="/:strCategory" element={<CategorySingle />} />
-          <Route path="/" element={<CategoryIndex />} />
           <Route path="*" element={<NotFound />} />
+
         </Routes>
       </BrowserRouter>
     </div>

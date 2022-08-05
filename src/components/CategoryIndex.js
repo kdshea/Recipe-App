@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
+import Pan from '../components/Pan'
 
 const CategoryIndex = () => {
 
@@ -27,7 +28,7 @@ const CategoryIndex = () => {
 
   return (
     <Container as="main" className='CategoryIndex text-center'>
-      <h1>Categories</h1>
+      <h1 className='mb-4'>Recipe Categories</h1>
       <Row>
         {categories.length > 0
           ?
@@ -49,7 +50,7 @@ const CategoryIndex = () => {
           })
           :
           <>
-            {errors ? <h2>Something went wrong. Please try again later</h2> : <h2> loading </h2>}
+            {errors ? <h2>Something went wrong. Please try again later</h2> : <Pan />}
           </>
         }
       </Row>

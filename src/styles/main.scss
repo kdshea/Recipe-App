@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   background: #f3ecdc;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .site-wrapper{
@@ -18,16 +19,17 @@
     color: #fff;
     text-decoration: none;
     &:hover{
-      background-color: #e0831c;
-      color: black
-    }
+      background-color: #b43623;
+      color: white;
+  }
   }
 
 .navbar{
   box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
   background-color: #e0831c;
-  .nav-link, span{
-    margin-left: 3000px;
+  display: flex;
+  justify-content: space-between;
+  .nav-link{
     cursor: pointer;
   }
 }
@@ -36,3 +38,46 @@
   margin-left: 40px;
 }
 
+.pan-wrapper{
+  text-align: center;
+  h2 {
+    margin-top: 70px;
+  }
+  img{
+    margin-top: 30px;
+    border-radius: 50px;
+    max-width: 100%;
+    width: 400px;
+  }
+}
+
+.top-row{
+  display: flex;
+  justify-content: center;
+}
+
+.middle-row{
+  h2{
+    margin: 30px auto;
+  }
+  
+}
+
+.bottom-row{
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.recipeSingleIngredients{
+  font-style: italic;
+}
+
+.bg-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  h1{
+    background-color: white;
+  }
+}
