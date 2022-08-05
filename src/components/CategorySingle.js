@@ -40,7 +40,7 @@ const CategorySingle = () => {
             const { strMeal, strMealThumb, idMeal } = recipe
             return (
               <Col key={idMeal} md="4" lg="3" className='mb-4'>
-                <Link to={`/${strCategory}/${idMeal}`}>
+                <Link to={`/a/${strCategory}/${idMeal}`}>
                   <Card>
                     <Card.Img variant='top' src={strMealThumb}></Card.Img>
                     <Card.Body>

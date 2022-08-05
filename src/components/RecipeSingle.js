@@ -62,9 +62,6 @@ const RecipeSingle = () => {
         ?
         <>
           <Row className='top-row'>
-            {/* <Col md="3" lg="2">
-              <img className='w-100' src={recipes.strMealThumb} alt={recipes.strMeal} />
-            </Col> */}
             <Col>
               <div className='bg-img'style={{ backgroundImage: `url(${recipes.strMealThumb})` }}>
                 <h1 className='text-center mx-auto'>{recipes.strMeal}</h1>

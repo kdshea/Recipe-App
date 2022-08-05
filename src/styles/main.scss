@@ -81,3 +81,10 @@
     background-color: white;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .card-title{
+    max-width: 100%;
+    font-size: 1vw;
+  }  
+}

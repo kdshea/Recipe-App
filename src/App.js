@@ -18,8 +18,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<CategoryIndex />} />
           <Route path="/RandomPage" element={<RandomPage />} />
-          <Route path="/:strCategory/:idMeal" element={<RecipeSingle />} />
-          <Route path="/:strCategory" element={<CategorySingle />} />
+          <Route path="/a/:strCategory/:idMeal" element={<RecipeSingle />} />
+          <Route path="/a/:strCategory" element={<CategorySingle />} />
           <Route path="*" element={<NotFound />} />
 
         </Routes>

@@ -37,7 +37,7 @@ const CategoryIndex = () => {
             console.log('strCategory', strCategory)
             return (
               <Col key={idCategory}  md="2" className='mb-4'>
-                <Link to={`/${strCategory}`}>
+                <Link to={`/a/${strCategory}`}>
                   <Card>
                     <Card.Img variant='top' src={strCategoryThumb}></Card.Img>
                     <Card.Body>
