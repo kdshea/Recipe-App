@@ -35,6 +35,7 @@ const RecipeSingle = () => {
   }, [recipes])
 
   console.log('entries', Object.entries(recipes))
+  
   const entries = Object.entries(recipes)
   const ingredients = []
   const measurements = []

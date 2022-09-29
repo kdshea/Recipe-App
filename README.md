@@ -208,16 +208,6 @@ Filtered Page (either navbar or a filter on homepage)
 (Recipes filtered by category) (with footer in Navbar instead of at bottom of page)
 
 
-
-
-
-
-
-
-
-
-
-
 When a card is clicked
 Recipe clicked from filtered category page
 (with footer in Navbar instead of at bottom of page)
@@ -245,25 +235,6 @@ www.themealdb.com/api/json/v1/1/filter.php?c= :strCategory
 www.themealdb.com/api/json/v1/1/filter.php?a= :strArea
 
 
-
-
-
-Plan
-
-Link App.js and Index.js
-Set up our routes/ BrowserRouter in the App.js and import our components
-Create components which all contain a different <p> tag just to check they are linked and working
-
-Create a PageNavbar that links to the homepage
-Use our links from insomnia from themealDB
-Make cards using one recipe category and apply Bootstrap CSS on that one recipe category, then once we’re happy with the CSS, we use a async try catch to import our data, and swap our recipe category’s data to the imported data (e.g. swap Desert to { strCategory }) 
-We need to display the name of the category (strCategory), a picture (strCategoryThumb) and we will need its ID for the key (idCategory) 
-Create filters (by strCategory)  
-With the filters we’re going to use useParams() but we need to play around with it to be 100% sure of what information we’re going to be saving. Our key will be category and our value will be the one they chose.  
-Individual Page (RecipeSingle component) has strMeal, strMealThumb and strInstructions
-We need to do a check on if strIngredients and strMeasure exists, and if it does we display it. 
-We can do a loop so that it runs 20 times so we don’t have to manually write out 20 tests.
-Use random.php to find a random recipe.  
 
 
 
