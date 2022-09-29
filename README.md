@@ -1,350 +1,157 @@
-# Getting Started with Create React App
+# SEI Project Two, Recipe App: React App Using an API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of contents
+* [Project Overview](#project-overview)
+* [Deployment Link](#deployment-link)
+* [Timeframe and Team](#timeframe-and-team) 
+* [Technologies Used](#technologies-used)
+* [Brief](#brief) 
+* [Planning](#planning)
+* [Build Process](#build-process)
+* [Challenges](#challenges)
+* [Wins](#wins)
+* [Key Learnings](#key-learnings)
+* [Bugs](#bugs)
+* [Future Improvements](#future-improvements) 
 
-## Available Scripts
+# Project Overview
 
-In the project directory, you can run:
+This is the second project I did for a Software Engineering Immersive course through General Assembly London. I worked with [Joe Rose](https://github.com/JRose117). In this app, users can navigate through categories of recipes to individual recipes, or jump to a randomly selected recipe. 
 
-### `npm start`
+![Landing](README-Images/landing.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Deployment Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app has been deployed with Netlify and is available [here.](https://react-recipe-app-2-day-project.netlify.app/)
 
-### `npm test`
+# Timeframe and Team
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* 2 day timeframe
+* Joe Rose (https://github.com/JRose117)
 
-### `npm run build`
+# Technologies Used 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+__Front-End__
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Axios
+* CSS3
+* HTML5
+* JavaScript
+* JSX
+* Microsoft Visual Studio Live Share
+* React Bootstrap 
+* React Router DOM
+* React.js
+* Sass
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+__Deployment__ 
 
-### `npm run eject`
+* Netlify 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+__Other__
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Chrome developer tools
+* Excalidraw
+* Git & GitHub
+* Insomnia
+* YouTube
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Brief
 
-## Learn More
+* Build a React application that consumes a public API.
+* The application should have several components and a router with several pages. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Planning
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* We brainstormed ideas and found a public API that had endpoints for categories of recipes and individual recipes. The API documentation is available at https://www.themealdb.com/. We used Excalidraw to create wireframes of our home page with all the categories, a page where the recipes are filtered by category, and a single recipe page. 
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-# ReadMe Template Worksheet
-
-Your ReadMes are the key deliverable that engineers will want to see as part of your job search. Each engineering team will look at different aspects of your ReadMe and repo. Some will go into the code itself and explore. Others will just want to see the showcase code snippets in the main ReadMe. Some will read the full thing to understand your approach, others will skim to specific sections.
-
-It’s crucial that you cover all the different sections below to ensure that you’ve got the information for all engineers that check these out. 
-
-We regularly have employer partners discuss the importance of the ReadMes in what they’re looking for and why they interview the grads that they do - so don’t underestimate the importance of writing strong ReadMes! 
-
-For any pair or group project, you cannot share a ReadMe. These must be written independently to ensure that the engineers reading this understands your specific experience and approach. 
-
-Make a copy of this document for each project you use throughout the course and fill in each section.
-
-Once the content has been finalised by the Outcomes team, you can then upload these onto your GitHub repository later.
-
-Things To Consider:
-
-+	That there are no spelling mistakes in your ReadMe - if you see a spelling error highlighted below, edit this. 
-+	Some engineers will reject applicants if their ReadMes are full of mistakes. From their perspective, if your ReadMes are full of mistakes, what is your code like…
-
-+	That your technologies are capitalised correctly - i.e JavaScript, jQuery, MongoDB
-
-+	That your formatting is consistent throughout - headers, indentation, full stops in bullets etc
-
-+	Any hyperlink included works
-+	That you include images throughout - code snippets, pictures of your planning stage, screenshots of the final project.
-+	These can be still screenshots or gifs
-+	This breaks up the text in your ReadMe and helps to keep the reader engaged
-
-+	That your ReadMe sounds like you - see this as an opportunity to showcase who you are to the engineering community and prospective employers. 
-+	Think back to the Personal Brand session and how employers want to get a sense of who you are. The content you write should sound as if you’re talking through your experience. 
-
-
-## ReadMe Sections
-
-### Description
-
-### Instructions
-
-Here, give a short description of the project. It can be a couple of sentences where you discuss the point in time during the course that you completed it, the topic of the project and potentially the tech stack.
-
-Insert your Description here:
-
-
-### Deployment link
-
-Instructions
-
-Here include the information on where the deployed project can be found. If login details are needed to access the full project, make sure you include them.
-
-If you have not yet deployed your project, you can add this in later.
-
-Insert your Deployment link here:
-
-
-
-
-### Getting Started/Code Installation
-
-Instructions
-
-Explain how the reader accesses your code. Include a step by step approach.
-
-Insert your Getting Started/Code Installation here:
-
-
-
-
-
-### Timeframe & Working Team (Solo/Pair/Group)
-
-Instructions
-
-Share the timeframe given for the project and whether you worked independently, in a pair, or in a group.
-
-If you worked in a pair or group, include the names of the people you collaborated with. As a bonus, you can also provide links to their GitHub repo.
-
-Insert your Timeframe & Working Team here:
-
-
-
-
-
-### Technologies Used
-
-Instructions
-
-List every technology you used to complete the project. This can be in one long list, or broken down into categories (Back End, Front End, Development Tools).
-
-Insert your Technologies Used here:
-
-
-
-
-
-### Brief
-Instructions
-
-Include the brief set by your instructional team here. This sets the context of the project you were working towards and mimics briefs you will be set later in your future roles.
-
-This can either be in bullets or in a paragraph.
-
-
-Insert your Brief here:
-
-
-
-
-### Planning
-
-Instructions
-
-The planning stage is important, as all projects in your future roles will have detailed plans before any coding happens. It is a great experience to share with potential engineer employers, as this reflects real engineering team practices. 
-
-Start by explaining the initial steps you took in the project. 
-
-+	Did you do any sketches? If so, discuss this and include images.
-+	Any wireframes of the front end and UI? You did? Then explain this and include images.
-+	Any ERDs? Same here, explain and include images.
-+	Use a project management tool to plan the sprint? If so, talk through this - what tool did you use? How you allocated tickets/responsibilities, sprint timeline etc. Also include screenshots of this.
-+	Any pseudocode? 
-+	If it was a group or pair project - Discuss who was designated which tasks. This is very important, as engineers want to understand who owned the different code elements when looking at a group project.
-
-For each project, review the above bullets and discuss every step you took in the planning stage, including the relevant images.
-
-Not every project will include the above, but it’s important to discuss any of the bullets that you did implement.
-
-Insert your Planning here:
-
-Wireframes
-
-Home Page -> (with footer in Navbar instead of at bottom of page)
+	* All Recipe Categories Wireframe
  
+![All Categories Wireframe](README-Images/AllCategories.png)
 
+	* Single Category of Recipes Wireframe
+ 
+![Single Category Wireframe](README-Images/RecipesByCategory.png)
 
-Filtered Page (either navbar or a filter on homepage)
-(Recipes filtered by category) (with footer in Navbar instead of at bottom of page)
+	* Single Recipe Wireframe
+ 
+![Single Recipe Wireframe](README-Images/SingleRecipe.png)
 
+* We would need the following components for our app: Nav Bar, Category Index, Single Category, Single Recipe, Random Page, and Not Found. The Category Index page was our landing page that showed all the recipe categories returned from the API. Clicking on a category navigates to the Category Single page. We used a different API endpoint that returned recipes filtered by category. From there, clicking on a recipe navigates to the Recipe Single page. There we would display the recipe image, ingredients, and instructions. There is an API endpoint that returns a random recipe ID. One of our stretch goals was to add a button using the randomly generated ID to navigate to that recipe. 
 
-When a card is clicked
-Recipe clicked from filtered category page
-(with footer in Navbar instead of at bottom of page)
 
+# Build Process
 
-To make it we’ll have components
+* We worked through the entire project together over Zoom. For the app, I coded while Joe followed along using Microsoft Visual Studio Live Share. For the styling, we used the same process but Joe coded while I followed along.
 
-Components
-NotFound
+* First, we created our React app and linked our App.js and Index.js. We made components for each of our pages. We set up our BrowserRouter and imported the components to the App.js. 
 
-RecipeSingle
-www.themealdb.com/api/json/v1/1/lookup.php?i= :id
-(example: www.themealdb.com/api/json/v1/1/lookup.php?i=52772)
+* Using Insomnia, we tested the links from our API. We used AJAX to make the async Axios requests in a try catch block to import the API data. This was executed inside a UseEffect that only triggered on the initial page load. This same process was repeated on the pages to get all categories, a single category, a single recipe, and a random recipe. Here is an example of one of our Axios requests:
 
-PageNavbar
+	* Example Axios Request
+ 
+![Example Axios Request](README-Images/AxiosRequestExample.png)
 
-RandomPage
-www.themealdb.com/api/json/v1/1/random.php
+* We used React Bootstrap cards to style the pages with multiple categories and multiple recipes. We made text size responsive and added a media query for larger screens. A screenshot of the JSX for a recipe card is shown below with a multiple recipe page populated with recipe cards:
 
-Home: CategoryIndex
-List of categories with thumbnails: www.themealdb.com/api/json/v1/1/categories.php
+	* Recipe Card JSX
+ 
+![Recipe Card JSX](README-Images/RecipeCardJSX.png)
 
-// Possibly Filtered by Category or Area
-www.themealdb.com/api/json/v1/1/filter.php?c= :strCategory
-www.themealdb.com/api/json/v1/1/filter.php?a= :strArea
+	* Example Recipe Cards
+ 
+![Example Recipe Cards](README-Images/RecipeCardsExample.png)
 
 
+* The data returned for the single recipes had ingredients and measures split into multiple strings of numbers and strings of text with the ingredient names. To generate a list of ingredients matching the measurements to the name, we made an array of the measurements and then iterated through and concatenated the corresponding text to the end of each array item. A more detailed description of this code is highlighted in the #Challenges section.
 
+* We made another component Pan, with a GIF of a pan flipping food to show while the pages were loading. We added a ternary that checked if the API data was loaded. If it was, it displayed our page component. There was another ternary nested so if there was no data AND there were errors, it displayed an error message. If there was no data but no errors, it would display the page loading pan GIF.
 
+* The YouTube links we needed to use to embed the videos were different from the YouTube links the API data returned. We were able to convert the links and add them into the JSX of the recipe page. A detailed description of the process we used is below in the #Wins section.
 
 
+# Wins
 
+* We wanted to display the YouTube videos on the recipe page because the YouTube thumbnails were usually more visually appealing than the other recipe images and videos encourage the user to stay on the page longer. 
 
+* The link format for embedded videos is different from the standard YouTube link format, but the last 11 characters of the links are the unique video identifiers. We used .slice()to take the unique end of the API YouTube link and add if to the embedded link format. We then took that link and put it inside an inline frame HTML element to display it. 
 
 
-### Build/Code Process
+	* Code to Embed YouTube Links
+ 
+![Embedded YouTube Link](README-Images/EmbeddedYouTubeLink.png)
 
-Instructions
+# Challenges 
 
-The Build/Code Process will be the longest section of your ReadMe and will be most insightful to the engineers that review them. This is where you will discuss the steps you took to code the project.
+* The ingredient list on our app looks straight forward in the deployed project, but the code to display the ingredients was a JavaScript challenge for us. The data returned strings of ingredients (ex: “strIngredient1”: “Lentils”) and strings of strings of measurements (ex: “strMeasure1: “1 cup”). The strings could number up to 20, but not all recipes had that many ingredients. We used Object.entries()to get an array of the key-value pairs of the recipe data and then iterated through returning and keys that contained “strIngredient” whose values weren’t null and pushed them to a new array of all the ingredient names. 
 
-You want to see your ReadMes as a way to walk the engineers through your approach and problem solving from the start of the project through to the end.
+	* Measurement Strings
+ 
+![Measurement Strings](README-Images/Measurements.png)
 
-You'll need to include a minimum of 3-4 code snippets, highlighting code you're particularly proud of and these code snippets will have descriptions on what you did, how and why to set the context of the snippet you include. These explanations are important for the engineers, as they will want to understand what you did and the reasoning behind the steps you took.
+	* Ingredient Strings
+ 
+![Ingredient Strings](README-Images/Ingredients.png)
 
-You don't need to document every single thing you coded, but walk them through the key sections of the project build.
+* We made a similar array for the measurements, but concatenated the ingredients to the end of the measurements string before pushing them to the new array. We set up a count inside of the loop to increase after each iteration. If the index of the current count in the ingredient name array was null, the iteration stopped so we wouldn’t iterate through the extra empty measurement strings.  
 
-For any group project, you will just focus on your contributions. 
+	* Loops to Display Ingredients
+ 
+![Ingredient Loops](README-Images/IngredientLoop.png)
 
-Some people will document the build/code process by discussing the key stages they worked on. Others will do a day by day guide. It’s entirely up to you how you structure this, as long as you discuss all the key things above.
 
-Insert your Build/Code Process here:
+# Key Learnings
 
+* We had trouble at first getting data back and we thought we needed to use a proxy to get a response from our API. So we set up a proxy, and used it while working on the project. When we went to deploy, we realized we originally had trouble because we were trying to access the API using an http:// request rather than the secure https:// and the proxy was unnecessary. 
+* After selecting our API and starting the project, we realized there wasn’t a request we could make that would return all of the recipes. This would make a search bar trickier and we would have to do multiple requests. It’s one of the ways we were limited by the “Freemium” content of our free API.  In projects I did later where I was building my own APIs, this struggle made me really appreciate being able to create endpoints returning exactly the data I needed for specific requests. 
 
+# Bugs
 
+* When users make a request that doesn’t match any other endpoints, the app displays a blank page rather than our 404-page component. 
 
+* There are some YouTube links from the API that have been deleted or made private. We don’t have anything in our code that checks the link validity so the broken links are still displayed. 
 
-### Challenges
+# Future Improvements
 
-Instructions
-
-Challenges are great for showing your learning journey and problem solving, and this is a section that many engineers will check out. Every day of your engineering career you’ll encounter challenges, this is part of your growth and development. It’s the challenges you encounter that helps you become a stronger and more competent engineer. 
-
-Here you will detail any particular challenges you encountered as you were coding the project. 
-
-Questions to answer here:
-
-+	What technical challenges did you come across? 
-+	Why were these challenges? 
-+	What problem solving did you do to rectify them?
-+	Team dynamics/ Project management
-+	Tools/Tech you used
-
-Insert your Challenges here:
-
-
-
-
-### Wins
-
-Instructions
-
-The Wins section is your opportunity to highlight the aspects of your project you are most proud of. See this as your chance to showcase these parts of your projects to the engineers reading your ReadMes.
-
-Things you could discuss here:
-
-+	Interesting problem solving you did
-+	Strong sections of code
-+	Collaboration with other team members
-+	Visual design of the project
-
-Insert your Wins here:
-
-
-### Key Learnings/Takeaways
-
-Instructions
-
-This section is one of the other most important parts of your ReadMe from an engineers’ perspective and helps to differentiate each of you from your classmates and team members. 
-
-Engineers love to understand what you learn from each project and how it has shaped you as an engineer. 
-
-See this as your opportunity to show the engineers how your skills grew during each project sprint. 
-
-Things you could discuss here:
-
-+	What Technologies/Tools do you now feel more confident with? Tell them specifically what you learnt about these. 
-+	What engineering processes did you become more comfortable with? Standups? Pair programming? Project management? Tell them what you learnt from these processes?
-
-Insert your Key Learnings/Takeaways here:
-
-
-
-
-
-### Bugs
-
-Instructions
-
-If you have any bugs in your project, it’s important that you flag them in your ReadMe. This helps the engineers reviewing your projects to understand that you are aware that there are issues - if you don’t flag these, then they won’t have that visibility that you know these problems are in your code and it can result in them not having a full understanding of your technical knowledge. 
-
-In either sentences or bullets, explain what the bugs are.
-
-If you have no bugs, you can leave this section blank.
-
-Insert your Bugs here:
-
-
-
-### Future Improvements
-
-Instructions
-
-It’s common to get to the end of your project and have ideas on what you would do if you have more time, as well as how you might improve it. 
-
-If you do, you should detail this here. It’s great to give that context on potential future improvements, to share your creative or technical ideas with the engineers reading your ReadMes.
-
-In either sentences or bullets, explain what your future improvements would be.
-
-Insert your Future Improvements here:
+* I would like to add a search bar that could return results from matching recipe names and ingredients.
