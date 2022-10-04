@@ -15,7 +15,7 @@ const CategoryIndex = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('http://themealdb.com/api/json/v1/1/categories.php')
+        const { data } = await axios.get('https://themealdb.com/api/json/v1/1/categories.php')
         setCategories(data.categories)
       } catch (err) {
         console.log(err)

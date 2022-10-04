@@ -19,7 +19,7 @@ const CategorySingle = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`http://themealdb.com/api/json/v1/1/filter.php?c=${strCategory}`)
+        const { data } = await axios.get(`https://themealdb.com/api/json/v1/1/filter.php?c=${strCategory}`)
         setRecipes(data.meals)
       } catch (err) {
         console.log(err)

@@ -17,7 +17,7 @@ const RecipeSingle = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`http://themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
+        const { data } = await axios.get(`https://themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
         setRecipes(data.meals[0])
       } catch (err) {
         console.log(err)

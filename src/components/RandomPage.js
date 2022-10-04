@@ -13,7 +13,7 @@ const RandomPage = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get('http://themealdb.com/api/json/v1/1/random.php')
+        const { data } = await axios.get('https://themealdb.com/api/json/v1/1/random.php')
         setIdMeal(data.meals[0].idMeal)
         setStrCategory(data.meals[0].strCategory)
       } catch (err) {
