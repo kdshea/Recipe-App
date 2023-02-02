@@ -1,4 +1,4 @@
-# SEI Project Two, Recipe App: React App Using an API
+# Recipe App: React App Using a Third-Party API
 
 # Table of contents
 * [Project Overview](#project-overview)
