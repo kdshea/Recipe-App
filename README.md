@@ -13,6 +13,7 @@
 * [Key Learnings](#key-learnings)
 * [Bugs](#bugs)
 * [Future Improvements](#future-improvements) 
+* [Other Projects](#other-projects) 
 
 # Project Overview
 
@@ -155,3 +156,20 @@ __Other__
 # Future Improvements
 
 * I would like to add a search bar that could return results from matching recipe names and ingredients.
+
+# Other Projects
+Take a look at other projects that I have in my own portfolio:
+
+**[Truffle Health Bill Upload](https://github.com/kdshea/Medical-Bill-Upload)**
+
+**[Seeker App](https://github.com/kdshea/Seeker-Full-Stack)** 
+
+**[Exploradex](https//github.com/kdshea/Exploradex-Server)** 
+
+**[Gmail Node Server](https://github.com/kdshea/Gmail-Node-Server)**
+
+**[Coconut Club](https://github.com/kdshea/Coconut-Club-Site)**
+
+**[Tetris Clone](https://github.com/kdshea/Tetris-Clone)**
+
+**[Speed Pour 2016](https://github.com/kdshea/Speed-Pour-2016)**
